@@ -1,8 +1,8 @@
 <?php
-include_once("./helper/helperFunctions.php");
+include_once ("./helper/helperFunctions.php");
 $userId = 0;
 $user = [];
-if (isset($_SESSION["userId"])) {
+if (isset ($_SESSION["userId"])) {
     $userId = !IsVariableIsSetOrEmpty($_SESSION['userId']) ? $_SESSION['userId'] : 0;
     $user = $userId !== 0 && !IsVariableIsSetOrEmpty($_SESSION['user']) ? $_SESSION['user'] : [];
 }
@@ -37,7 +37,9 @@ if (isset($_SESSION["userId"])) {
                         ?>
 
                     </p>
-                    <p class="text-light py-4 mb-4">&copy;<?php echo date("Y"); ?> ONLINE DATING</p>
+                    <p class="text-light py-4 mb-4">&copy;
+                        <?php echo date("Y"); ?> ONLINE DATING
+                    </p>
                 </div>
             </div>
 
@@ -45,16 +47,17 @@ if (isset($_SESSION["userId"])) {
                 <div class="py-2 my-4">
                     <div>
                         <p class="text-white"><i class="fa fa-map-marker mx-2 "></i>
-                            Houtmolenstraat 9
+                            J.F Kennedylaan 49
                             Doetinchem
-                            </p>
+                        </p>
                     </div>
 
                     <div>
                         <p><i class="fa fa-phone  mx-2 "></i>0314-123456</p>
                     </div>
                     <div>
-                        <p><i class="fa fa-envelope  mx-2"></i><a href="mailto:support@gc-dating.nl">support@gc-dating.nl</a>
+                        <p><i class="fa fa-envelope  mx-2"></i><a
+                                href="mailto:support@gc-dating.nl">support@gc-dating.nl</a>
                         </p>
                     </div>
                 </div>
