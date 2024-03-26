@@ -1,10 +1,10 @@
 <?php
 //it allows any type of database.
 
-define("serverName", "localhost:3306");
-define("database", "datingdb");
-define("username", "dating_site_user");
-define("password", "dating!12");
+define("serverName", "localhost");
+define("database", "net24fhalleriet_DatingSiteDatabase");
+define("username", "net24fhalleriet_gebruiker51");
+define("password", "XD7YFXxesJ+y");
 define("connectionString", "mysql:host=" . serverName . ";dbname=" . database);
 
 function getConnection()
@@ -20,7 +20,7 @@ function getConnection()
 
 function query($query, $connection)
 {
-    if (!isset($connection)) {
+    if (!isset ($connection)) {
         throw new PDOException("Connection not established");
     }
     $stmt = $connection->prepare($query);
